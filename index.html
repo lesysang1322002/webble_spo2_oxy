@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>WEBBLE</title>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">WebBLE-SySang</a>
+          <div class="d-flex">
+            <button class="btn btn-outline-warning" id="read">Scan</button>
+          </div>
+        </div>
+      </nav>
+
+  </head>
+  <body>
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Chào mừng bạn đến với WebBLE!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hãy nhấn Scan để tìm kiếm và kết nối với thiết bị!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-3">
+        <div class="row">
+        <div class="col-md-6">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-12 left">
+                        <h2 class="mb-4">Tiêu chuẩn nồng độ oxy trong máu và nhịp tim của người bình thường là bao nhiêu?</h1>
+                        
+                        <div class="mb-4">
+                            <h3 class="mb-3">Tại sao phải đo nhịp tim và nồng độ oxy trong máu?</h2>
+                            <p>Việc theo dõi và đánh giá nồng độ oxy trong máu liên tục là biện pháp cần thiết và hiệu quả trong việc theo dõi sức khỏe người bệnh.
+                                Khi bạn biết được nồng độ oxy trong máu, bạn sẽ đánh giá được tình trạng cơ thể của mình, xây dựng chế độ ăn uống, mục tiêu thể dục, cường độ tập luyện phù hợp. Khi kết hợp chỉ số nồng độ oxy trong máu cùng với nhịp tim, bạn sẽ đo lường được mức độ sức khỏe của bản thân và đánh giá được mức độ hiệu quả trong chương trình tập luyện</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="mb-3">Nồng độ oxy trong máu và nhịp tim của người bình thường là bao nhiêu?
+                            </h2>
+                            <p>Chỉ số nồng độ oxy trong máu được biểu thị bằng %. Khi thiết bị oxy cho ra chỉ số 97%, có nghĩa là mỗi tế bào hồng cầu được tạo bởi 97% oxygenated và 3% không oxy hóa hemoglobin. Chỉ số SpO2 ở người bình thường dao động từ 95% - 100%.
+
+                                Nếu chỉ số SpO2 thấp hơn 95%, có nghĩa là cơ thể đang trong tình trạng thiếu máu thiếu oxy. 
+                                
+                                Mức thang đo chỉ số nồng độ oxy tiêu chuẩn:
+                                
+                                Chỉ số oxy trong máu tốt dao động từ 97 - 99%.
+                                Chỉ số oxy trong máu trung bình: 94 - 96%.
+                                Chỉ số oxy trong máu thấp, cần xin ý kiến của bác sĩ chủ trị: 90% - 93%.
+                                Dấu hiệu suy hô hấp rất nặng: Dưới 92% nếu không thở oxy và dưới 95% nếu có thở oxy.
+                                Tình trạng nguy hiểm: Dưới 90%.
+                                Nhịp tim của người bình thường sẽ dao động từ 60 - 100 nhịp/phút. Theo các chuyên gia, một trái tim khỏe mạnh sẽ có nhịp đập từ 60 - 80 nhịp/phút.</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="mb-3">Yếu tố ảnh hưởng khi đo nồng độ oxy trong máu và nhịp tim?</h2>
+                            <p>Nồng độ oxy trong máu:
+
+                                Các máy đo sẽ không cho ra được kết quả chính xác 100%, độ sai lệch của thiết bị rơi vào ± 2%.
+                                Hemoglobin bất thường.
+                                Cử động khi đo.
+                                Tình trạng giảm tưới máu mô do choáng, hạ thân nhiệt nặng.
+                                Bị nhiễu ánh sáng khi đo.
+                                Sắc độ của móng tay, móng chân.
+                                Nhịp tim:
+                                
+                                Nên đo nhịp tim lúc nghỉ ngơi vì đây là lúc tim hoạt động bình thường và ổn định, không bị ảnh hưởng bởi vận động. 
+                                Sự co mạch, thúc đẩy máu tĩnh mạch về tim.
+                                Không nên đo khi đang đứng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Thông báo</h5>
+                    <div class="row">
+                      <div class="col-sm-12 mb-3">
+                          <textarea class="form-control text-log" id="textareaNotification" style="height: 200px"></textarea>
+                      </div>
+                      <div class="col-6">
+                        <button type="button" class="btn btn-dark btn-outline-warning" id="start">Bắt đầu đo</button>
+                        <button type="button" class="btn btn-dark btn-outline-warning" id="stop">Dừng đo</button>
+                      </div>
+                      <div class="text-center">
+                          <h4 id="battery_level">Đo nhịp tim và nồng độ oxy trong máu</h4>
+                      </div>
+                    </div>
+                </div>   
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        var deviceName = 'BLE Battery';
+        var bleService = 'battery_service';
+        var bleCharacteristic = 'battery_level';
+        var bluetoothDeviceDetected;
+        var gattCharacteristic;
+        $(document).ready(function() {
+
+            $('#read').click(function() {
+                if (isWebBluetoothEnabled()) { 
+                    read(); 
+                }
+            })
+
+            $('#start').click(function() {
+                if (isWebBluetoothEnabled()) { 
+                    if (isWebBluetoothEnabled()) { start() }
+                }
+            })
+
+
+            $('#stop').click(function() {
+                if (isWebBluetoothEnabled()) { 
+                    stop(); 
+                }
+            })
+
+            $('#send').click(function(){
+              if (isWebBluetoothEnabled()) { 
+                    send(); 
+                }
+            });
+
+        });
+        window.onload = function () {
+        var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'));
+        myModal.show();
+            }
+        function isWebBluetoothEnabled() {
+            if (!navigator.bluetooth) {
+            console.log('Web Bluetooth API is not available in this browser!');
+            log('Web Bluetooth API is not available in this browser!');
+            return false
+            }
+
+            return true
+        }
+
+        function getDeviceInfo() {
+            let options = {
+            optionalServices: [bleService],
+            filters: [
+                { "name": deviceName }
+            ]
+            }
+
+            console.log('Requesting any Bluetooth Device...');
+            log('Đang tìm thiết bị...');
+            return navigator.bluetooth.requestDevice(options).then(device => {
+                bluetoothDeviceDetected = device;
+                $('#read').text('Disconnect');
+            }).catch(error => {
+                console.log('Argh! ' + error);
+                log('Argh! ' + error);
+            })
+        }
+
+        function read() {
+            return (bluetoothDeviceDetected ? Promise.resolve() : getDeviceInfo())
+            .then(connectGATT)
+            .then(_ => {
+                console.log('Reading battery level...');
+                return gattCharacteristic.readValue();
+            })
+
+        }
+        function connectGATT() {
+            if (bluetoothDeviceDetected.gatt.connected && gattCharacteristic) {
+                return Promise.resolve()
+            }
+
+            return bluetoothDeviceDetected.gatt.connect()
+            .then(server => {
+                console.log('Getting GATT Service...');
+                log('Đang kết nối với thiết bị...');
+                return server.getPrimaryService(bleService);
+            })
+            .then(service => {
+                console.log('Getting GATT Characteristic...');
+                log('Kết nối thành công');
+                return service.getCharacteristic(bleCharacteristic);
+            })
+            .then(characteristic => {
+                gattCharacteristic = characteristic
+                gattCharacteristic.addEventListener('characteristicvaluechanged', handleChangedValue)
+                document.querySelector('#start').disabled = false;
+                document.querySelector('#stop').disabled = true;
+            })
+        }
+
+    function handleChangedValue(event) {
+    let data = event.target.value;
+
+    // Khởi tạo một mảng để chứa dữ liệu từ mảng uint8_t
+    let dataArray = new Uint8Array(data.buffer);
+
+    // Khởi tạo chuỗi để chứa dữ liệu từ mảng uint8_t
+    let valueString = '';
+
+    // Lặp qua mảng để trích xuất dữ liệu từng phần tử
+    for (let i = 0; i < dataArray.length; i++) {
+        valueString += String.fromCharCode(dataArray[i]);
+    }
+    var now = new Date();
+    console.log('> ' + now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds() + ' battery level is ' + valueString);
+    $('#battery_level').text(valueString);
+    log('Nhịp tim: ' + valueString );
+}
+
+        function start() {
+            gattCharacteristic.startNotifications()
+            .then(_ => {
+                console.log('Start reading...');
+                log('Bắt đầu đo...');
+                document.querySelector('#start').disabled = true;
+                document.querySelector('#stop').disabled = false;
+            })
+            .catch(error => {
+                console.log('[ERROR] Start: ' + error);
+                log('[ERROR] Start: ' + error);
+            })
+        }
+
+        function stop() {
+            gattCharacteristic.stopNotifications().then(_ => {
+                console.log('Dừng đo...');
+                log('Stop reading...');
+                document.querySelector('#start').disabled = false;
+                document.querySelector('#stop').disabled = true;
+            })
+            .catch(error => {
+                console.log('[ERROR] Stop: ' + error);
+            })
+        }
+
+
+        function log(text) {
+            const now = new Date();
+            const prefixlog = now.getHours() + ':' + now.getMinutes() + ':'  + now.getSeconds() + '> ';
+
+            $('.text-log').val($('.text-log').val() + prefixlog + text + '\n');
+        }
+
+    </script>
+</body>
+</html>
